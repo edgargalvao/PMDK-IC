@@ -1,0 +1,15 @@
+For accurate reproduction on PMEM devices:
+1) Direct the compiler to emit clwb instructions instead of clflushopt by changing compiler flag from "-mclflushopt" to "-mclwb" in:
+ - benchmarks/Makefile
+ - Immutable-Datastructure-c++/CMakeLists.txt
+ - vacation/CMakeLists.txt
+ - nvm_malloc/Makefile
+
+2) Replace compiler intrinsics for clflushopt (_mm_clflushopt) with clwb (_mm_clwb) in following locations:
+ - Immutable-Datastructure-C++/immer/nvm_utils.hpp
+
+3) Replace manual PMDK override in pmdk/src/libpmem/x86_64/init.c line 376 from if(1) to if(0).
+
+4) Update MMAP_FLAGS in nvm_malloc by passing additional compiler flag "-DPMEM_ENABLED" in nvm_malloc/Makefile.
+
+5) Update MMAP FLAGS in pmdk/src/common/file.c from "MAP_SHARED" to "MAP_SHARED_VALIDATE|MAP_SYNC".
