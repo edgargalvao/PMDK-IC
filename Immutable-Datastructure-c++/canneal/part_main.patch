@@ -1,0 +1,61 @@
+diff --git a/canneal/main.cpp b/canneal/main.cpp
+index d2ad34b..90e0f32 100644
+--- a/canneal/main.cpp
++++ b/canneal/main.cpp
+@@ -32,6 +32,8 @@
+ #include <math.h>
+ #include <stdlib.h>
+ #include <unistd.h>
++#include <sys/stat.h>
++#include <string.h>
+ #include <vector>
+ 
+ #ifdef ENABLE_THREADS
+@@ -47,11 +49,20 @@
+ #include "netlist.h"
+ #include "rng.h"
+ 
++#include <nvm_malloc.h>
++#include <immer/nvm_utils.hpp>
++
+ using namespace std;
+ 
+ void* entry_pt(void*);
+ 
+-
++bool BackingFileExists(const char* path) {
++    char backing_file[60];
++    strcpy(backing_file, path);
++    strcat(backing_file, "/backing");
++    struct stat buffer;
++    return (stat (backing_file, &buffer) == 0);
++}
+ 
+ int main (int argc, char * const argv[]) {
+ #ifdef PARSEC_VERSION
+@@ -67,13 +78,13 @@ int main (int argc, char * const argv[]) {
+ 
+ 	srandom(3);
+ 
+-	if(argc != 5 && argc != 6) {
+-		cout << "Usage: " << argv[0] << " NTHREADS NSWAPS TEMP NETLIST [NSTEPS]" << endl;
++	if(argc != 6 && argc != 7) {
++		cout << "Usage: " << argv[0] << " BACKING_FILE NTHREADS NSWAPS TEMP NETLIST [NSTEPS]" << endl;
+ 		exit(1);
+ 	}	
+ 	
+ 	//argument 1 is numthreads
+-	int num_threads = atoi(argv[1]);
++	int num_threads = atoi(argv[2]);
+ 	cout << "Threadcount: " << num_threads << endl;
+ #ifndef ENABLE_THREADS
+ 	if (num_threads != 1){
+@@ -83,7 +94,7 @@ int main (int argc, char * const argv[]) {
+ #endif
+ 		
+ 	//argument 2 is the num moves / temp
+-	int swaps_per_temp = atoi(argv[2]);
++	int swaps_per_temp = atoi(argv[3]);
+ 	cout << swaps_per_temp << " swaps per temperature step" << endl;
+ 
+ 	//argument 3 is the start temp

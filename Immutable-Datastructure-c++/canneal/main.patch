@@ -1,0 +1,140 @@
+diff --git a/canneal/main.cpp b/canneal/main.cpp
+index d2ad34b..fc9eea0 100644
+--- a/canneal/main.cpp
++++ b/canneal/main.cpp
+@@ -32,6 +32,8 @@
+ #include <math.h>
+ #include <stdlib.h>
+ #include <unistd.h>
++#include <sys/stat.h>
++#include <string.h>
+ #include <vector>
+ 
+ #ifdef ENABLE_THREADS
+@@ -47,12 +49,20 @@
+ #include "netlist.h"
+ #include "rng.h"
+ 
++#include <nvm_malloc.h>
++#include <immer/nvm_utils.hpp>
++
+ using namespace std;
+ 
+ void* entry_pt(void*);
+ 
+-
+-
++bool BackingFileExists(const char* path) {
++    char backing_file[60];
++    strcpy(backing_file, path);
++    strcat(backing_file, "/backing");
++    struct stat buffer;
++    return (stat (backing_file, &buffer) == 0);
++}
+ int main (int argc, char * const argv[]) {
+ #ifdef PARSEC_VERSION
+ #define __PARSEC_STRING(x) #x
+@@ -67,13 +77,13 @@ int main (int argc, char * const argv[]) {
+ 
+ 	srandom(3);
+ 
+-	if(argc != 5 && argc != 6) {
+-		cout << "Usage: " << argv[0] << " NTHREADS NSWAPS TEMP NETLIST [NSTEPS]" << endl;
++	if(argc != 6 && argc != 7) {
++		cout << "Usage: " << argv[0] << " BACKING_FILE NTHREADS NSWAPS TEMP NETLIST [NSTEPS]" << endl;
+ 		exit(1);
+ 	}	
+ 	
+-	//argument 1 is numthreads
+-	int num_threads = atoi(argv[1]);
++	//argument 2 is numthreads
++	int num_threads = atoi(argv[2]);
+ 	cout << "Threadcount: " << num_threads << endl;
+ #ifndef ENABLE_THREADS
+ 	if (num_threads != 1){
+@@ -82,36 +92,52 @@ int main (int argc, char * const argv[]) {
+ 	}
+ #endif
+ 		
+-	//argument 2 is the num moves / temp
+-	int swaps_per_temp = atoi(argv[2]);
++	//argument 3 is the num moves / temp
++	int swaps_per_temp = atoi(argv[3]);
+ 	cout << swaps_per_temp << " swaps per temperature step" << endl;
+ 
+-	//argument 3 is the start temp
+-	int start_temp =  atoi(argv[3]);
++	//argument 4 is the start temp
++	int start_temp =  atoi(argv[4]);
+ 	cout << "start temperature: " << start_temp << endl;
+ 	
+-	//argument 4 is the netlist filename
+-	string filename(argv[4]);
++	//argument 5 is the netlist filename
++	string filename(argv[5]);
+ 	cout << "netlist filename: " << filename << endl;
+ 	
+-	//argument 5 (optional) is the number of temperature steps before termination
++	//argument 6 (optional) is the number of temperature steps before termination
+ 	int number_temp_steps = -1;
+-        if(argc == 6) {
+-		number_temp_steps = atoi(argv[5]);
+-		cout << "number of temperature steps: " << number_temp_steps << endl;
+-        }
++    if(argc == 7) {
++        number_temp_steps = atoi(argv[6]);
++        cout << "number of temperature steps: " << number_temp_steps << endl;
++    }
++
++    //argument 1 is backing file
++	const char* path = argv[1];
++    bool recover = BackingFileExists(path);
++
++    netlist* my_netlist = nullptr;
++    annealer_thread* a_thread = nullptr;
++    if (recover == false) {
++        std::cout << "Initializing backing file\n"; 
++        nvm_initialize(path, 0);
++        void *mem = nvm_reserve_id("netlist", sizeof(netlist));
++        netlist* my_netlist = new (mem) netlist(filename);
++        my_netlist = new netlist(filename);
++	    NVM_SFENCE();
++        nvm_activate_id("netlist"); 
++        a_thread = new annealer_thread(my_netlist,num_threads,swaps_per_temp,start_temp,number_temp_steps);
++    } else {
++        // recovered
++        std::cout << "Recovering from backing file\n"; 
++        nvm_initialize(path, 1);
++    }
+ 
+-	//now that we've read in the commandline, run the program
+-	netlist my_netlist(filename);
+-	
+-	annealer_thread a_thread(&my_netlist,num_threads,swaps_per_temp,start_temp,number_temp_steps);
+-	
+ #ifdef ENABLE_PARSEC_HOOKS
+ 	__parsec_roi_begin();
+ #endif
+ #ifdef ENABLE_THREADS
+ 	std::vector<pthread_t> threads(num_threads);
+-	void* thread_in = static_cast<void*>(&a_thread);
++	void* thread_in = static_cast<void*>(a_thread);
+ 	for(int i=0; i<num_threads; i++){
+ 		pthread_create(&threads[i], NULL, entry_pt,thread_in);
+ 	}
+@@ -119,13 +145,13 @@ int main (int argc, char * const argv[]) {
+ 		pthread_join(threads[i], NULL);
+ 	}
+ #else
+-	a_thread.Run();
++	a_thread->Run();
+ #endif
+ #ifdef ENABLE_PARSEC_HOOKS
+ 	__parsec_roi_end();
+ #endif
+ 	
+-	cout << "Final routing is: " << my_netlist.total_routing_cost() << endl;
++	cout << "Final routing is: " << my_netlist->total_routing_cost() << endl;
+ 
+ #ifdef ENABLE_PARSEC_HOOKS
+ 	__parsec_bench_end();

@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -Wextra -pedantic -Wno-unused-parameter -Wno-extended-offsetof -ggdb -O3 -mclflushopt -fno-omit-frame-pointer -Werror   CMakeFiles/test-flex_vector-B3-BL3.dir/flex_vector/B3-BL3.cpp.o  -o flex_vector-B3-BL3 -L/nobackup/swapnilh/mod-single-repo/Immutable-Datastructure-c++/../nvm_malloc/ -lnvmmalloc -lpthread 

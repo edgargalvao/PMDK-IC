@@ -1,0 +1,83 @@
+diff --git a/immer/detail/hamts/node.hpp b/immer/detail/hamts/node.hpp
+index e59fec8..d8e0804 100644
+--- a/immer/detail/hamts/node.hpp
++++ b/immer/detail/hamts/node.hpp
+@@ -222,8 +222,8 @@ struct node
+             } catch (...) {
+                 deallocate_inner(p, n);
+                 throw;
+-            }
+-        }
++		    }
++		}
+         return p;
+     }
+ 
+@@ -485,35 +485,38 @@ struct node
+         dst->impl.d.data.inner.nodemap = src->nodemap() | bit;
+         // Flushes both nodemap and datamap together.
+         NVM_PERSIST(&(dst->impl.d.data.inner), immer_offsetof(inner_t, values));
+-        try {
+-            std::uninitialized_copy(
+-                    src->values(), src->values() + voffset,
+-                    dst->values());
+-            try {
+-                std::uninitialized_copy(
+-                    src->values() + voffset + 1, src->values() + nv,
+-                    dst->values() + voffset);
+-                // Both copies flushed together.
+-                NVM_PERSIST(dst->values(), (dst->values()+nv)-dst->values());
+-            } catch (...) {
+-                destroy_n(dst->values(), voffset);
+-                throw;
+-            }
+-        } catch (...) {
+-            deallocate_inner(dst, n + 1, nv - 1);
+-            throw;
+-        }
+-        inc_nodes(src->children(), n);
+-        std::uninitialized_copy(
+-            src->children(), src->children() + noffset,
+-            dst->children());
+-        std::uninitialized_copy(
+-            src->children() + noffset, src->children() + n,
+-            dst->children() + noffset + 1);
+-        dst->children()[noffset] = node;
+-        // BOTH copies and noffset update flushed together.
+-        NVM_PERSIST(dst->children(), (dst->children()+n)-dst->children());
+-        return dst;
++	// dst->values() is not defined if nv == 1;
++	if (nv != 1) {
++	    try {
++		std::uninitialized_copy(
++			src->values(), src->values() + voffset,
++			dst->values());
++		try {
++		    std::uninitialized_copy(
++			    src->values() + voffset + 1, src->values() + nv,
++			    dst->values() + voffset);
++		    // Both copies flushed together.
++		    NVM_PERSIST(dst->values(), (dst->values()+nv)-dst->values());
++		} catch (...) {
++		    destroy_n(dst->values(), voffset);
++		    throw;
++		}
++	    } catch (...) {
++		deallocate_inner(dst, n + 1, nv - 1);
++		throw;
++	    }
++	}
++	inc_nodes(src->children(), n);
++	std::uninitialized_copy(
++		src->children(), src->children() + noffset,
++		dst->children());
++	std::uninitialized_copy(
++		src->children() + noffset, src->children() + n,
++		dst->children() + noffset + 1);
++	dst->children()[noffset] = node;
++	// BOTH copies and noffset update flushed together.
++	NVM_PERSIST(dst->children(), (dst->children()+n)-dst->children());
++	return dst;
+     }
+ 
+     static node_t* copy_inner_replace_inline(

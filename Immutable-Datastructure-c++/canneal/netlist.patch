@@ -1,0 +1,33 @@
+diff --git a/canneal/netlist.h b/canneal/netlist.h
+index 1f51923..f76a8bd 100644
+--- a/canneal/netlist.h
++++ b/canneal/netlist.h
+@@ -30,8 +30,8 @@
+ #ifndef NETLIST_H
+ #define NETLIST_H
+ 
+-#include <vector>
+-#include <map>
++#include <immer/vector.hpp>
++#include <immer/map.hpp>
+ #include <string>
+ 
+ #include "annealer_types.h"
+@@ -61,9 +61,9 @@ protected:
+ 	unsigned _max_x;
+ 	unsigned _max_y;
+ 	unsigned _chip_size;
+-	std::vector<netlist_elem> _elements;//store the actual elements here
+-	std::vector< std::vector<location_t> > _locations;//store the actual locations here
+-	std::map<std::string, netlist_elem*> _elem_names;
++	immer::vector<netlist_elem*>* _elements;//store the actual elements here
++	immer::vector<immer::vector*<location_t> >* _locations;//store the actual locations here
++	immer::map<std::string, netlist_elem*>* _elem_names;
+ 	netlist_elem* create_elem_if_necessary(std::string& name);
+ 	//due to the pointers, perhaps I should make the copy operator protected to prevent copying
+ };
+@@ -71,4 +71,3 @@ protected:
+ 
+ 
+ #endif
+-
