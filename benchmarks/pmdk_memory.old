@@ -1,0 +1,70 @@
+Configuration of current run:
+Backing file:/mnt/ext4-pmem14//bench
+Implementation:pmdk
+Datastructure:map
+Key/Index distribution:rand
+Percent writes:100%
+Number of elements:100000
+Number of operations:100000
+Number of threads:1
+Requested:17018 KB
+About to hit ROI
+Latency: 75157451 ns
+Throughput: 1.33054e+06 op/s
+Requested:17799 KB
+Configuration of current run:
+Backing file:/mnt/ext4-pmem14//bench
+Implementation:pmdk
+Datastructure:set
+Key/Index distribution:rand
+Percent writes:100%
+Number of elements:100000
+Number of operations:100000
+Number of threads:1
+Requested:14674 KB
+About to hit ROI
+Latency: 15449144 ns
+Throughput: 6.47285e+06 op/s
+Requested:14674 KB
+Configuration of current run:
+Backing file:/mnt/ext4-pmem14//bench
+Implementation:pmdk
+Datastructure:queue
+Key/Index distribution:rand
+Percent writes:50%
+Number of elements:100000
+Number of operations:100000
+Number of threads:1
+Requested:3906 KB
+About to hit ROI
+Latency: 80262710 ns
+Throughput: 1.24591e+06 op/s
+Requested:5865 KB
+Configuration of current run:
+Backing file:/mnt/ext4-pmem14//bench
+Implementation:pmdk
+Datastructure:stack
+Key/Index distribution:rand
+Percent writes:50%
+Number of elements:100000
+Number of operations:100000
+Number of threads:1
+Requested:2343 KB
+About to hit ROI
+Latency: 67016356 ns
+Throughput: 1.49217e+06 op/s
+Requested:3519 KB
+Configuration of current run:
+Backing file:/mnt/ext4-pmem14//bench
+Implementation:pmdk
+Datastructure:vector
+Key/Index distribution:rand
+Percent writes:100%
+Number of elements:100000
+Number of operations:100000
+Number of threads:1
+Requested:781 KB
+About to hit ROI
+Latency: 38703607 ns
+Throughput: 2.58374e+06 op/s
+Requested:781 KB

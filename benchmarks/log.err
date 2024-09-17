@@ -1,0 +1,318 @@
+taskset: failed to set pid 22821's affinity: Invalid argument
+taskset: failed to set pid 22823's affinity: Invalid argument
+taskset: failed to set pid 22825's affinity: Invalid argument
+taskset: failed to set pid 22827's affinity: Invalid argument
+taskset: failed to set pid 22829's affinity: Invalid argument
+taskset: failed to set pid 22831's affinity: Invalid argument
+taskset: failed to set pid 22833's affinity: Invalid argument
+taskset: failed to set pid 22836's affinity: Invalid argument
+run.sh: line 38: /home/swapnilh/mnemosyne-gcc/usermode//bench/memcached/memslap: No such file or directory
+taskset: failed to set pid 22853's affinity: Invalid argument
+taskset: failed to set pid 22855's affinity: Invalid argument
+taskset: failed to set pid 22857's affinity: Invalid argument
+taskset: failed to set pid 22859's affinity: Invalid argument
+taskset: failed to set pid 22861's affinity: Invalid argument
+taskset: failed to set pid 22863's affinity: Invalid argument
+taskset: failed to set pid 22865's affinity: Invalid argument
+taskset: failed to set pid 22867's affinity: Invalid argument
+taskset: failed to set pid 22870's affinity: Invalid argument
+run.sh: line 60: /home/swapnilh/mnemosyne-gcc/usermode//bench/memcached/memslap: No such file or directory
+taskset: failed to set pid 22877's affinity: Invalid argument
+taskset: failed to set pid 22879's affinity: Invalid argument
+taskset: failed to set pid 22881's affinity: Invalid argument
+taskset: failed to set pid 22884's affinity: Invalid argument
+taskset: failed to set pid 22886's affinity: Invalid argument
+taskset: failed to set pid 22888's affinity: Invalid argument
+taskset: failed to set pid 22890's affinity: Invalid argument
+taskset: failed to set pid 22892's affinity: Invalid argument
+taskset: failed to set pid 22895's affinity: Invalid argument
+run.sh: line 82: /home/swapnilh/mnemosyne-gcc/usermode//bench/memcached/memslap: No such file or directory
+taskset: failed to set pid 22909's affinity: Invalid argument
+taskset: failed to set pid 22911's affinity: Invalid argument
+taskset: failed to set pid 22913's affinity: Invalid argument
+taskset: failed to set pid 22915's affinity: Invalid argument
+taskset: failed to set pid 22917's affinity: Invalid argument
+taskset: failed to set pid 22919's affinity: Invalid argument
+taskset: failed to set pid 22921's affinity: Invalid argument
+taskset: failed to set pid 22923's affinity: Invalid argument
+taskset: failed to set pid 22927's affinity: Invalid argument
+run.sh: line 106: /home/swapnilh/mnemosyne-gcc/usermode//bench/memcached/memslap: No such file or directory
+taskset: failed to set pid 22936's affinity: Invalid argument
+taskset: failed to set pid 22938's affinity: Invalid argument
+taskset: failed to set pid 22940's affinity: Invalid argument
+taskset: failed to set pid 22942's affinity: Invalid argument
+taskset: failed to set pid 22944's affinity: Invalid argument
+taskset: failed to set pid 22946's affinity: Invalid argument
+taskset: failed to set pid 22948's affinity: Invalid argument
+taskset: failed to set pid 22950's affinity: Invalid argument
+taskset: failed to set pid 22952's affinity: Invalid argument
+taskset: failed to set pid 22955's affinity: Invalid argument
+run.sh: line 132: /home/swapnilh/mnemosyne-gcc/usermode//bench/memcached/memslap: No such file or directory
+taskset: failed to set pid 22960's affinity: Invalid argument
+taskset: failed to set pid 22962's affinity: Invalid argument
+taskset: failed to set pid 22964's affinity: Invalid argument
+taskset: failed to set pid 22966's affinity: Invalid argument
+taskset: failed to set pid 22968's affinity: Invalid argument
+taskset: failed to set pid 22970's affinity: Invalid argument
+taskset: failed to set pid 22972's affinity: Invalid argument
+taskset: failed to set pid 22974's affinity: Invalid argument
+taskset: failed to set pid 22977's affinity: Invalid argument
+taskset: failed to set pid 26656's affinity: Invalid argument
+taskset: failed to set pid 26658's affinity: Invalid argument
+taskset: failed to set pid 26660's affinity: Invalid argument
+taskset: failed to set pid 26664's affinity: Invalid argument
+taskset: failed to set pid 26666's affinity: Invalid argument
+taskset: failed to set pid 26668's affinity: Invalid argument
+taskset: failed to set pid 26670's affinity: Invalid argument
+taskset: failed to set pid 26673's affinity: Invalid argument
+run.sh: line 38: ../memcached-1.2.4/bench/memcached/memslap: No such file or directory
+taskset: failed to set pid 26678's affinity: Invalid argument
+taskset: failed to set pid 26693's affinity: Invalid argument
+taskset: failed to set pid 26695's affinity: Invalid argument
+taskset: failed to set pid 26701's affinity: Invalid argument
+taskset: failed to set pid 26703's affinity: Invalid argument
+taskset: failed to set pid 26705's affinity: Invalid argument
+taskset: failed to set pid 26713's affinity: Invalid argument
+taskset: failed to set pid 26715's affinity: Invalid argument
+taskset: failed to set pid 26720's affinity: Invalid argument
+run.sh: line 60: ../memcached-1.2.4/bench/memcached/memslap: No such file or directory
+taskset: failed to set pid 26765's affinity: Invalid argument
+taskset: failed to set pid 26769's affinity: Invalid argument
+taskset: failed to set pid 26777's affinity: Invalid argument
+taskset: failed to set pid 26785's affinity: Invalid argument
+taskset: failed to set pid 26802's affinity: Invalid argument
+taskset: failed to set pid 26815's affinity: Invalid argument
+taskset: failed to set pid 26824's affinity: Invalid argument
+taskset: failed to set pid 26826's affinity: Invalid argument
+taskset: failed to set pid 26903's affinity: Invalid argument
+taskset: failed to set pid 26905's affinity: Invalid argument
+taskset: failed to set pid 26907's affinity: Invalid argument
+taskset: failed to set pid 26909's affinity: Invalid argument
+taskset: failed to set pid 26911's affinity: Invalid argument
+taskset: failed to set pid 26913's affinity: Invalid argument
+taskset: failed to set pid 26915's affinity: Invalid argument
+taskset: failed to set pid 26918's affinity: Invalid argument
+taskset: failed to set pid 26996's affinity: Invalid argument
+taskset: failed to set pid 26998's affinity: Invalid argument
+taskset: failed to set pid 27000's affinity: Invalid argument
+taskset: failed to set pid 27002's affinity: Invalid argument
+taskset: failed to set pid 27004's affinity: Invalid argument
+taskset: failed to set pid 27006's affinity: Invalid argument
+taskset: failed to set pid 27008's affinity: Invalid argument
+taskset: failed to set pid 27011's affinity: Invalid argument
+run.sh: line 37: ../memcached-1.2.4/bench/memcached/memslap: No such file or directory
+taskset: failed to set pid 27017's affinity: Invalid argument
+taskset: failed to set pid 27019's affinity: Invalid argument
+taskset: failed to set pid 27021's affinity: Invalid argument
+taskset: failed to set pid 27023's affinity: Invalid argument
+taskset: failed to set pid 27025's affinity: Invalid argument
+taskset: failed to set pid 27027's affinity: Invalid argument
+taskset: failed to set pid 27029's affinity: Invalid argument
+taskset: failed to set pid 27031's affinity: Invalid argument
+taskset: failed to set pid 27034's affinity: Invalid argument
+run.sh: line 59: ../memcached-1.2.4/bench/memcached/memslap: No such file or directory
+taskset: failed to set pid 27045's affinity: Invalid argument
+taskset: failed to set pid 27047's affinity: Invalid argument
+taskset: failed to set pid 27049's affinity: Invalid argument
+taskset: failed to set pid 27051's affinity: Invalid argument
+taskset: failed to set pid 27053's affinity: Invalid argument
+taskset: failed to set pid 27055's affinity: Invalid argument
+taskset: failed to set pid 27057's affinity: Invalid argument
+taskset: failed to set pid 27059's affinity: Invalid argument
+taskset: failed to set pid 27062's affinity: Invalid argument
+taskset: failed to set pid 27119's affinity: Invalid argument
+taskset: failed to set pid 27121's affinity: Invalid argument
+taskset: failed to set pid 27123's affinity: Invalid argument
+taskset: failed to set pid 27125's affinity: Invalid argument
+taskset: failed to set pid 27127's affinity: Invalid argument
+taskset: failed to set pid 27129's affinity: Invalid argument
+taskset: failed to set pid 27131's affinity: Invalid argument
+taskset: failed to set pid 27134's affinity: Invalid argument
+run.sh: line 37: ../memcached-1.2.4/bench/memcached/memslap: No such file or directory
+taskset: failed to set pid 27139's affinity: Invalid argument
+taskset: failed to set pid 27141's affinity: Invalid argument
+taskset: failed to set pid 27143's affinity: Invalid argument
+taskset: failed to set pid 27145's affinity: Invalid argument
+taskset: failed to set pid 27147's affinity: Invalid argument
+taskset: failed to set pid 27149's affinity: Invalid argument
+taskset: failed to set pid 27151's affinity: Invalid argument
+taskset: failed to set pid 27153's affinity: Invalid argument
+taskset: failed to set pid 27156's affinity: Invalid argument
+run.sh: line 59: ../memcached-1.2.4/bench/memcached/memslap: No such file or directory
+taskset: failed to set pid 27161's affinity: Invalid argument
+taskset: failed to set pid 27163's affinity: Invalid argument
+taskset: failed to set pid 27165's affinity: Invalid argument
+taskset: failed to set pid 27167's affinity: Invalid argument
+taskset: failed to set pid 27169's affinity: Invalid argument
+taskset: failed to set pid 27171's affinity: Invalid argument
+taskset: failed to set pid 27173's affinity: Invalid argument
+taskset: failed to set pid 27175's affinity: Invalid argument
+taskset: failed to set pid 27178's affinity: Invalid argument
+run.sh: line 81: ../memcached-1.2.4/bench/memcached/memslap: No such file or directory
+taskset: failed to set pid 27183's affinity: Invalid argument
+taskset: failed to set pid 27185's affinity: Invalid argument
+taskset: failed to set pid 27187's affinity: Invalid argument
+taskset: failed to set pid 27189's affinity: Invalid argument
+taskset: failed to set pid 27191's affinity: Invalid argument
+taskset: failed to set pid 27193's affinity: Invalid argument
+taskset: failed to set pid 27195's affinity: Invalid argument
+taskset: failed to set pid 27197's affinity: Invalid argument
+taskset: failed to set pid 27200's affinity: Invalid argument
+run.sh: line 105: ../memcached-1.2.4/bench/memcached/memslap: No such file or directory
+taskset: failed to set pid 27207's affinity: Invalid argument
+taskset: failed to set pid 27209's affinity: Invalid argument
+taskset: failed to set pid 27211's affinity: Invalid argument
+taskset: failed to set pid 27213's affinity: Invalid argument
+taskset: failed to set pid 27215's affinity: Invalid argument
+taskset: failed to set pid 27217's affinity: Invalid argument
+taskset: failed to set pid 27219's affinity: Invalid argument
+taskset: failed to set pid 27221's affinity: Invalid argument
+taskset: failed to set pid 27223's affinity: Invalid argument
+taskset: failed to set pid 27226's affinity: Invalid argument
+run.sh: line 131: ../memcached-1.2.4/bench/memcached/memslap: No such file or directory
+taskset: failed to set pid 27238's affinity: Invalid argument
+taskset: failed to set pid 27240's affinity: Invalid argument
+taskset: failed to set pid 27242's affinity: Invalid argument
+taskset: failed to set pid 27244's affinity: Invalid argument
+taskset: failed to set pid 27246's affinity: Invalid argument
+taskset: failed to set pid 27248's affinity: Invalid argument
+taskset: failed to set pid 27250's affinity: Invalid argument
+taskset: failed to set pid 27252's affinity: Invalid argument
+taskset: failed to set pid 27255's affinity: Invalid argument
+run.sh: line 156: ../memcached-1.2.4/bench/memcached/memslap: No such file or directory
+taskset: failed to set pid 27260's affinity: Invalid argument
+taskset: failed to set pid 27330's affinity: Invalid argument
+taskset: failed to set pid 27332's affinity: Invalid argument
+taskset: failed to set pid 27334's affinity: Invalid argument
+taskset: failed to set pid 27336's affinity: Invalid argument
+taskset: failed to set pid 27338's affinity: Invalid argument
+taskset: failed to set pid 27340's affinity: Invalid argument
+taskset: failed to set pid 27342's affinity: Invalid argument
+taskset: failed to set pid 27345's affinity: Invalid argument
+run.sh: line 37: ../memcached-1.2.4/bench/memcached/memslap: No such file or directory
+taskset: failed to set pid 27355's affinity: Invalid argument
+taskset: failed to set pid 27357's affinity: Invalid argument
+taskset: failed to set pid 27359's affinity: Invalid argument
+taskset: failed to set pid 27361's affinity: Invalid argument
+taskset: failed to set pid 27363's affinity: Invalid argument
+taskset: failed to set pid 27365's affinity: Invalid argument
+taskset: failed to set pid 27367's affinity: Invalid argument
+taskset: failed to set pid 27369's affinity: Invalid argument
+taskset: failed to set pid 27372's affinity: Invalid argument
+run.sh: line 59: ../memcached-1.2.4/bench/memcached/memslap: No such file or directory
+taskset: failed to set pid 27379's affinity: Invalid argument
+taskset: failed to set pid 27381's affinity: Invalid argument
+taskset: failed to set pid 27383's affinity: Invalid argument
+taskset: failed to set pid 27385's affinity: Invalid argument
+taskset: failed to set pid 27387's affinity: Invalid argument
+taskset: failed to set pid 27389's affinity: Invalid argument
+taskset: failed to set pid 27391's affinity: Invalid argument
+taskset: failed to set pid 27393's affinity: Invalid argument
+taskset: failed to set pid 27396's affinity: Invalid argument
+run.sh: line 81: ../memcached-1.2.4/bench/memcached/memslap: No such file or directory
+taskset: failed to set pid 27419's affinity: Invalid argument
+taskset: failed to set pid 27421's affinity: Invalid argument
+taskset: failed to set pid 27423's affinity: Invalid argument
+taskset: failed to set pid 27425's affinity: Invalid argument
+taskset: failed to set pid 27427's affinity: Invalid argument
+taskset: failed to set pid 27429's affinity: Invalid argument
+taskset: failed to set pid 27431's affinity: Invalid argument
+taskset: failed to set pid 27433's affinity: Invalid argument
+taskset: failed to set pid 27436's affinity: Invalid argument
+run.sh: line 105: ../memcached-1.2.4/bench/memcached/memslap: No such file or directory
+taskset: failed to set pid 27446's affinity: Invalid argument
+taskset: failed to set pid 27448's affinity: Invalid argument
+taskset: failed to set pid 27450's affinity: Invalid argument
+taskset: failed to set pid 27452's affinity: Invalid argument
+taskset: failed to set pid 27454's affinity: Invalid argument
+taskset: failed to set pid 27456's affinity: Invalid argument
+taskset: failed to set pid 27458's affinity: Invalid argument
+taskset: failed to set pid 27460's affinity: Invalid argument
+taskset: failed to set pid 27462's affinity: Invalid argument
+taskset: failed to set pid 27465's affinity: Invalid argument
+run.sh: line 131: ../memcached-1.2.4/bench/memcached/memslap: No such file or directory
+taskset: failed to set pid 27470's affinity: Invalid argument
+taskset: failed to set pid 27472's affinity: Invalid argument
+taskset: failed to set pid 27474's affinity: Invalid argument
+taskset: failed to set pid 27476's affinity: Invalid argument
+taskset: failed to set pid 27478's affinity: Invalid argument
+taskset: failed to set pid 27480's affinity: Invalid argument
+taskset: failed to set pid 27482's affinity: Invalid argument
+taskset: failed to set pid 27484's affinity: Invalid argument
+taskset: failed to set pid 27487's affinity: Invalid argument
+run.sh: line 156: ../memcached-1.2.4/bench/memcached/memslap: No such file or directory
+taskset: failed to set pid 27492's affinity: Invalid argument
+./bench: error while loading shared libraries: libhashmap_tx.so: cannot open shared object file: No such file or directory
+./bench: error while loading shared libraries: libhashmap_tx.so: cannot open shared object file: No such file or directory
+./bench: error while loading shared libraries: libhashmap_tx.so: cannot open shared object file: No such file or directory
+./bench: error while loading shared libraries: libhashmap_tx.so: cannot open shared object file: No such file or directory
+./bench: error while loading shared libraries: libhashmap_tx.so: cannot open shared object file: No such file or directory
+./bench: error while loading shared libraries: libhashmap_tx.so: cannot open shared object file: No such file or directory
+..//Immutable-Datastructure-c++//build_vacation_o3/vacation/flush/vacation: error while loading shared libraries: libnvmmalloc.so: cannot open shared object file: No such file or directory
+./bench: error while loading shared libraries: libhashmap_tx.so: cannot open shared object file: No such file or directory
+./bench: error while loading shared libraries: libhashmap_tx.so: cannot open shared object file: No such file or directory
+./bench: error while loading shared libraries: libhashmap_tx.so: cannot open shared object file: No such file or directory
+./bench: error while loading shared libraries: libhashmap_tx.so: cannot open shared object file: No such file or directory
+./bench: error while loading shared libraries: libhashmap_tx.so: cannot open shared object file: No such file or directory
+./bench: error while loading shared libraries: libhashmap_tx.so: cannot open shared object file: No such file or directory
+..//Immutable-Datastructure-c++//build_vacation_o3/vacation/flush/vacation: error while loading shared libraries: libnvmmalloc.so: cannot open shared object file: No such file or directory
+..//Immutable-Datastructure-c++//build_vacation_o3/memcached-1.2.4/flush/memcached: error while loading shared libraries: libevent-2.0.so.5: cannot open shared object file: No such file or directory
+./bench: error while loading shared libraries: libhashmap_tx.so: cannot open shared object file: No such file or directory
+./bench: error while loading shared libraries: libhashmap_tx.so: cannot open shared object file: No such file or directory
+./bench: error while loading shared libraries: libhashmap_tx.so: cannot open shared object file: No such file or directory
+./bench: error while loading shared libraries: libhashmap_tx.so: cannot open shared object file: No such file or directory
+./bench: error while loading shared libraries: libhashmap_tx.so: cannot open shared object file: No such file or directory
+./bench: error while loading shared libraries: libhashmap_tx.so: cannot open shared object file: No such file or directory
+..//Immutable-Datastructure-c++//build_vacation_o3/vacation/flush/vacation: error while loading shared libraries: libnvmmalloc.so: cannot open shared object file: No such file or directory
+..//Immutable-Datastructure-c++//build_vacation_o3/memcached-1.2.4/flush/memcached: error while loading shared libraries: libevent-2.0.so.5: cannot open shared object file: No such file or directory
+./bench: error while loading shared libraries: libhashmap_tx.so: cannot open shared object file: No such file or directory
+./bench: error while loading shared libraries: libhashmap_tx.so: cannot open shared object file: No such file or directory
+./bench: error while loading shared libraries: libhashmap_tx.so: cannot open shared object file: No such file or directory
+./bench: error while loading shared libraries: libhashmap_tx.so: cannot open shared object file: No such file or directory
+./bench: error while loading shared libraries: libhashmap_tx.so: cannot open shared object file: No such file or directory
+./bench: error while loading shared libraries: libhashmap_tx.so: cannot open shared object file: No such file or directory
+unable to create file /vacation/backing
+..//Immutable-Datastructure-c++//build_vacation_o3/memcached-1.2.4/flush/memcached: error while loading shared libraries: libevent-2.0.so.5: cannot open shared object file: No such file or directory
+run.sh: line 35: ../memcached-1.2.4/bench/memcached/memslap: No such file or directory
+taskset: failed to execute ..//graph-algo//mod_bfs: No such file or directory
+./bench_no_flush: error while loading shared libraries: libhashmap_tx.so: cannot open shared object file: No such file or directory
+./bench_no_flush: error while loading shared libraries: libhashmap_tx.so: cannot open shared object file: No such file or directory
+./bench_no_flush: error while loading shared libraries: libhashmap_tx.so: cannot open shared object file: No such file or directory
+./bench_no_flush: error while loading shared libraries: libhashmap_tx.so: cannot open shared object file: No such file or directory
+./bench_no_flush: error while loading shared libraries: libhashmap_tx.so: cannot open shared object file: No such file or directory
+./bench_no_flush: error while loading shared libraries: libhashmap_tx.so: cannot open shared object file: No such file or directory
+unable to create file /vacation/backing
+..//Immutable-Datastructure-c++//build_vacation_o3/memcached-1.2.4/no_flush/memcached_no_flush: error while loading shared libraries: libevent-2.0.so.5: cannot open shared object file: No such file or directory
+run.sh: line 57: ../memcached-1.2.4/bench/memcached/memslap: No such file or directory
+taskset: failed to execute ..//graph-algo//mod_bfs_noflush: No such file or directory
+./bench: error while loading shared libraries: libhashmap_tx.so: cannot open shared object file: No such file or directory
+./bench: error while loading shared libraries: libhashmap_tx.so: cannot open shared object file: No such file or directory
+./bench: error while loading shared libraries: libhashmap_tx.so: cannot open shared object file: No such file or directory
+./bench: error while loading shared libraries: libhashmap_tx.so: cannot open shared object file: No such file or directory
+./bench: error while loading shared libraries: libhashmap_tx.so: cannot open shared object file: No such file or directory
+./bench: error while loading shared libraries: libhashmap_tx.so: cannot open shared object file: No such file or directory
+../vacation//build/vacation: error while loading shared libraries: libpmemobj.so.1: cannot open shared object file: No such file or directory
+../memcached-1.2.4/build/memcached: error while loading shared libraries: libpmemobj.so.1: cannot open shared object file: No such file or directory
+run.sh: line 79: ../memcached-1.2.4/bench/memcached/memslap: No such file or directory
+taskset: failed to execute ..//graph-algo//pmdk_bfs: No such file or directory
+./bench: error while loading shared libraries: libhashmap_tx.so: cannot open shared object file: No such file or directory
+./bench: error while loading shared libraries: libhashmap_tx.so: cannot open shared object file: No such file or directory
+./bench: error while loading shared libraries: libhashmap_tx.so: cannot open shared object file: No such file or directory
+./bench: error while loading shared libraries: libhashmap_tx.so: cannot open shared object file: No such file or directory
+./bench: error while loading shared libraries: libhashmap_tx.so: cannot open shared object file: No such file or directory
+./bench: error while loading shared libraries: libhashmap_tx.so: cannot open shared object file: No such file or directory
+../vacation//build/vacation: error while loading shared libraries: libpmemobj.so.1: cannot open shared object file: No such file or directory
+../memcached-1.2.4/build/memcached: error while loading shared libraries: libpmemobj.so.1: cannot open shared object file: No such file or directory
+run.sh: line 103: ../memcached-1.2.4/bench/memcached/memslap: No such file or directory
+taskset: failed to execute ..//graph-algo//pmdk_bfs: No such file or directory
+./bench: error while loading shared libraries: libpmemobj.so.1: cannot open shared object file: No such file or directory
+./bench: error while loading shared libraries: libpmemobj.so.1: cannot open shared object file: No such file or directory
+./bench: error while loading shared libraries: libpmemobj.so.1: cannot open shared object file: No such file or directory
+./bench: error while loading shared libraries: libpmemobj.so.1: cannot open shared object file: No such file or directory
+./bench: error while loading shared libraries: libpmemobj.so.1: cannot open shared object file: No such file or directory
+./bench: error while loading shared libraries: libpmemobj.so.1: cannot open shared object file: No such file or directory
+./bench: error while loading shared libraries: libpmemobj.so.1: cannot open shared object file: No such file or directory
+../vacation//build/vacation: error while loading shared libraries: libpmemobj.so.1: cannot open shared object file: No such file or directory
+../memcached-1.2.4/build/memcached: error while loading shared libraries: libpmemobj.so.1: cannot open shared object file: No such file or directory
+run.sh: line 129: ../memcached-1.2.4/bench/memcached/memslap: No such file or directory
+taskset: failed to execute ..//graph-algo//pmdk_bfs: No such file or directory
