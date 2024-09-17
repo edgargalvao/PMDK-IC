@@ -1,0 +1,119 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/swapnilh/pmdk-stuff/libpmemobj-cpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_7d1a4/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_7d1a4.dir/build.make CMakeFiles/cmTC_7d1a4.dir/build
+gmake[1]: Entering directory '/home/swapnilh/pmdk-stuff/libpmemobj-cpp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7d1a4.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_7d1a4.dir/CheckSymbolExists.c.o   -c /home/swapnilh/pmdk-stuff/libpmemobj-cpp/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_7d1a4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7d1a4.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_7d1a4.dir/CheckSymbolExists.c.o  -o cmTC_7d1a4 
+CMakeFiles/cmTC_7d1a4.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_7d1a4.dir/build.make:87: cmTC_7d1a4] Error 1
+gmake[1]: Leaving directory '/home/swapnilh/pmdk-stuff/libpmemobj-cpp/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_7d1a4/fast] Error 2
+
+File /home/swapnilh/pmdk-stuff/libpmemobj-cpp/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/swapnilh/pmdk-stuff/libpmemobj-cpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_41341/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_41341.dir/build.make CMakeFiles/cmTC_41341.dir/build
+gmake[1]: Entering directory '/home/swapnilh/pmdk-stuff/libpmemobj-cpp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_41341.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_41341.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_41341
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_41341.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_41341.dir/CheckFunctionExists.c.o  -o cmTC_41341 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_41341.dir/build.make:87: cmTC_41341] Error 1
+gmake[1]: Leaving directory '/home/swapnilh/pmdk-stuff/libpmemobj-cpp/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_41341/fast] Error 2
+
+
+Performing C++ SOURCE FILE Test CXX_HAS_/Zc:__cplusplus failed with the following output:
+Change Dir: /home/swapnilh/pmdk-stuff/libpmemobj-cpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_c6efe/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_c6efe.dir/build.make CMakeFiles/cmTC_c6efe.dir/build
+gmake[1]: Entering directory '/home/swapnilh/pmdk-stuff/libpmemobj-cpp/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c6efe.dir/src.cxx.o
+/usr/bin/c++    -DCXX_HAS_/Zc:__cplusplus   /Zc:__cplusplus -o CMakeFiles/cmTC_c6efe.dir/src.cxx.o -c /home/swapnilh/pmdk-stuff/libpmemobj-cpp/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: /Zc:__cplusplus: No such file or directory
+gmake[1]: *** [CMakeFiles/cmTC_c6efe.dir/build.make:66: CMakeFiles/cmTC_c6efe.dir/src.cxx.o] Error 1
+gmake[1]: Leaving directory '/home/swapnilh/pmdk-stuff/libpmemobj-cpp/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_c6efe/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test AGGREGATE_INITIALIZATION_AVAILABLE failed with the following output:
+Change Dir: /home/swapnilh/pmdk-stuff/libpmemobj-cpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_9e5a0/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_9e5a0.dir/build.make CMakeFiles/cmTC_9e5a0.dir/build
+gmake[1]: Entering directory '/home/swapnilh/pmdk-stuff/libpmemobj-cpp/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9e5a0.dir/src.cxx.o
+/usr/bin/c++   -I/home/swapnilh/pmdk-stuff/libpmemobj-cpp/tests/../include -I/usr/local/include  -DAGGREGATE_INITIALIZATION_AVAILABLE --std=c++11 -c   -o CMakeFiles/cmTC_9e5a0.dir/src.cxx.o -c /home/swapnilh/pmdk-stuff/libpmemobj-cpp/build/CMakeFiles/CMakeTmp/src.cxx
+/home/swapnilh/pmdk-stuff/libpmemobj-cpp/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/swapnilh/pmdk-stuff/libpmemobj-cpp/build/CMakeFiles/CMakeTmp/src.cxx:4:4: error: static assertion failed
+    static_assert(false, "");
+    ^~~~~~~~~~~~~
+gmake[1]: *** [CMakeFiles/cmTC_9e5a0.dir/build.make:66: CMakeFiles/cmTC_9e5a0.dir/src.cxx.o] Error 1
+gmake[1]: Leaving directory '/home/swapnilh/pmdk-stuff/libpmemobj-cpp/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_9e5a0/fast] Error 2
+
+Source file was:
+#include <type_traits>
+		int main() {
+		#if !__cpp_lib_is_aggregate
+			static_assert(false, "");
+		#endif
+		}
+Performing C++ SOURCE FILE Test CXX_HAS__Wunreachable_code_return failed with the following output:
+Change Dir: /home/swapnilh/pmdk-stuff/libpmemobj-cpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_c6008/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_c6008.dir/build.make CMakeFiles/cmTC_c6008.dir/build
+gmake[1]: Entering directory '/home/swapnilh/pmdk-stuff/libpmemobj-cpp/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c6008.dir/src.cxx.o
+/usr/bin/c++    -Wall -Wpointer-arith -Wunused-macros -Wsign-conversion -Wsign-compare -DCXX_HAS__Wunreachable_code_return   -Wunreachable-code-return -o CMakeFiles/cmTC_c6008.dir/src.cxx.o -c /home/swapnilh/pmdk-stuff/libpmemobj-cpp/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-Wunreachable-code-return'; did you mean '-Wunreachable-code'?
+gmake[1]: *** [CMakeFiles/cmTC_c6008.dir/build.make:66: CMakeFiles/cmTC_c6008.dir/src.cxx.o] Error 1
+gmake[1]: Leaving directory '/home/swapnilh/pmdk-stuff/libpmemobj-cpp/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_c6008/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CXX_HAS__Wmissing_variable_declarations failed with the following output:
+Change Dir: /home/swapnilh/pmdk-stuff/libpmemobj-cpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_25f06/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_25f06.dir/build.make CMakeFiles/cmTC_25f06.dir/build
+gmake[1]: Entering directory '/home/swapnilh/pmdk-stuff/libpmemobj-cpp/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_25f06.dir/src.cxx.o
+/usr/bin/c++    -Wall -Wpointer-arith -Wunused-macros -Wsign-conversion -Wsign-compare -DCXX_HAS__Wmissing_variable_declarations   -Wmissing-variable-declarations -o CMakeFiles/cmTC_25f06.dir/src.cxx.o -c /home/swapnilh/pmdk-stuff/libpmemobj-cpp/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-Wmissing-variable-declarations'; did you mean '-Wmissing-declarations'?
+gmake[1]: *** [CMakeFiles/cmTC_25f06.dir/build.make:66: CMakeFiles/cmTC_25f06.dir/src.cxx.o] Error 1
+gmake[1]: Leaving directory '/home/swapnilh/pmdk-stuff/libpmemobj-cpp/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_25f06/fast] Error 2
+
+Source file was:
+int main() { return 0; }

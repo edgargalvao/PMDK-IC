@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -Wextra -pedantic -Wno-unused-parameter -Wno-extended-offsetof -ggdb -O3 -mclflushopt -fno-omit-frame-pointer -Werror   CMakeFiles/test-detail-type_traits.dir/detail/type_traits.cpp.o  -o detail-type_traits -L/nobackup/swapnilh/mod-single-repo/Immutable-Datastructure-c++/../nvm_malloc/ -lnvmmalloc -lpthread 

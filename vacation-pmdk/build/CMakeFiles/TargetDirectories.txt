@@ -1,0 +1,4 @@
+/nobackup/swapnilh/mod-single-repo/vacation-pmdk/build/CMakeFiles/edit_cache.dir
+/nobackup/swapnilh/mod-single-repo/vacation-pmdk/build/CMakeFiles/rebuild_cache.dir
+/nobackup/swapnilh/mod-single-repo/vacation-pmdk/build/CMakeFiles/vacation.dir
+/nobackup/swapnilh/mod-single-repo/vacation-pmdk/build/CMakeFiles/vacation_notx.dir

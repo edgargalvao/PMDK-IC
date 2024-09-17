@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /nobackup/swapnilh/mod-single-repo/Immutable-Datastructure-c++/build_vacation/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e151d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e151d.dir/build.make CMakeFiles/cmTC_e151d.dir/build
+make[1]: Entering directory '/nobackup/swapnilh/mod-single-repo/Immutable-Datastructure-c++/build_vacation/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e151d.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_e151d.dir/CheckSymbolExists.c.o   -c /nobackup/swapnilh/mod-single-repo/Immutable-Datastructure-c++/build_vacation/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_e151d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e151d.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_e151d.dir/CheckSymbolExists.c.o  -o cmTC_e151d 
+CMakeFiles/cmTC_e151d.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_e151d.dir/build.make:97: recipe for target 'cmTC_e151d' failed
+make[1]: *** [cmTC_e151d] Error 1
+make[1]: Leaving directory '/nobackup/swapnilh/mod-single-repo/Immutable-Datastructure-c++/build_vacation/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_e151d/fast' failed
+make: *** [cmTC_e151d/fast] Error 2
+
+File /nobackup/swapnilh/mod-single-repo/Immutable-Datastructure-c++/build_vacation/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /nobackup/swapnilh/mod-single-repo/Immutable-Datastructure-c++/build_vacation/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_21810/fast"
+/usr/bin/make -f CMakeFiles/cmTC_21810.dir/build.make CMakeFiles/cmTC_21810.dir/build
+make[1]: Entering directory '/nobackup/swapnilh/mod-single-repo/Immutable-Datastructure-c++/build_vacation/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_21810.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_21810.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_21810
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_21810.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_21810.dir/CheckFunctionExists.c.o  -o cmTC_21810 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_21810.dir/build.make:97: recipe for target 'cmTC_21810' failed
+make[1]: *** [cmTC_21810] Error 1
+make[1]: Leaving directory '/nobackup/swapnilh/mod-single-repo/Immutable-Datastructure-c++/build_vacation/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_21810/fast' failed
+make: *** [cmTC_21810/fast] Error 2
+
+

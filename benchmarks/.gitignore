@@ -1,0 +1,7 @@
+*.log
+*.o
+bench
+debug_bench
+val_bench 
+bench_no_flush 
+memory_usage 

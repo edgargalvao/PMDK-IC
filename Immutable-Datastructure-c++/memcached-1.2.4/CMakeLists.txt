@@ -1,0 +1,5 @@
+add_custom_target(immer_memcached  COMMENT "Builds memcached")
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -DHAVE_CONFIG_H -O0 -ggdb -mclwb")
+set(VALGRIND "../../..//pmem-valgrind/")
+add_subdirectory("flush")
+add_subdirectory("no_flush")

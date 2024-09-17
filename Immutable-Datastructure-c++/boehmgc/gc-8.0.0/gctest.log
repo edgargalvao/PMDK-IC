@@ -1,0 +1,13 @@
+Completed 1 tests
+Allocated 679686 collectable objects
+Allocated 203 uncollectable objects
+Allocated 1369470 atomic objects
+Reallocated 126 objects
+Finalized 2202/2202 objects - finalization is probably ok
+Total number of bytes allocated is 105343092
+Total memory use by allocated blocks is 356352 bytes
+Final heap size is 90112 bytes
+Final number of reachable objects is 426
+Completed 101 collections in 0 msecs
+Collector appears to work
+PASS gctest (exit status: 0)

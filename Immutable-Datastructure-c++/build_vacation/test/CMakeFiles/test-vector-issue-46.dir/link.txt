@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -Wextra -pedantic -Wno-unused-parameter -Wno-extended-offsetof -ggdb -O3 -mclflushopt -fno-omit-frame-pointer -Werror   CMakeFiles/test-vector-issue-46.dir/vector/issue-46.cpp.o  -o vector-issue-46 -L/nobackup/swapnilh/mod-single-repo/Immutable-Datastructure-c++/../nvm_malloc/ -lnvmmalloc -lpthread 

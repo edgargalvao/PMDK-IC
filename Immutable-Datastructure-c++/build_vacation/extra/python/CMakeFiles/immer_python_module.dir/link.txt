@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -Wall -Wextra -pedantic -Wno-unused-parameter -Wno-extended-offsetof -ggdb -O3 -mclflushopt -fno-omit-frame-pointer -Werror  -shared  -o immer_python_module.so CMakeFiles/immer_python_module.dir/src/immer-raw.cpp.o /usr/lib/x86_64-linux-gnu/libpython2.7.so 

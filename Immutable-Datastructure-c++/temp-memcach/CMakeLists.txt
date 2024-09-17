@@ -1,0 +1,8 @@
+add_custom_target(immer_memcached  COMMENT "Builds memcached")
+#set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DLOGGING_ON")
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -DHAVE_CONFIG_H")
+set(VALGRIND "/home/swapnilh/valgrind/pmem-valgrind/")
+add_dependencies(check immer_stamp_kozy)
+add_executable(memcached assoc.c items.c memcached.c slabs.c stats.c thread.c)
+target_include_directories(memcached PRIVATE ${CMAKE_CURRENT_SOURCE_DIR} ${VALGRIND}/lackey ${VALGRIND}/include)
+target_link_libraries(memcached PUBLIC immer-dev event)

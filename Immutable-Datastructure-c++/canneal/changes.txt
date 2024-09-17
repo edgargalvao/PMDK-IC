@@ -1,0 +1,3 @@
+- Made netlist persistent
+- _elements vector in netlists points to pointers.
+netlist_elem->present_loc is not an atomic ptr, so canneal is not thread-safe.

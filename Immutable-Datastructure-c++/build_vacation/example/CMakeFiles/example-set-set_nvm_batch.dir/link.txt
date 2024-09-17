@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -Wextra -pedantic -Wno-unused-parameter -Wno-extended-offsetof -ggdb -O3 -mclflushopt -fno-omit-frame-pointer -Werror   CMakeFiles/example-set-set_nvm_batch.dir/set/set_nvm_batch.cpp.o  -o set-set_nvm_batch -L/nobackup/swapnilh/mod-single-repo/Immutable-Datastructure-c++/../nvm_malloc/ -lnvmmalloc -lpthread 

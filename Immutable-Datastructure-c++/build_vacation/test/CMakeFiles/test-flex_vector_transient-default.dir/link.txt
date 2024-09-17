@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -Wextra -pedantic -Wno-unused-parameter -Wno-extended-offsetof -ggdb -O3 -mclflushopt -fno-omit-frame-pointer -Werror   CMakeFiles/test-flex_vector_transient-default.dir/flex_vector_transient/default.cpp.o  -o flex_vector_transient-default -L/nobackup/swapnilh/mod-single-repo/Immutable-Datastructure-c++/../nvm_malloc/ -lnvmmalloc -lpthread 
