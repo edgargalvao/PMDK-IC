@@ -2,7 +2,7 @@ CXX=g++
 RM=rm -f
 
 NVM_MALLOC_DIR=../nvm_malloc/
-PMDK_DIR=../pmdk/src/
+PMDK_DIR=../pmdk-1.5/src/
 PMDK_CPP_DIR=../libpmemobj-cpp/include/
 IMMER_DIR=../Immutable-Datastructure-c++/
 VALGRIND_DIR=../pmem-valgrind/
@@ -17,7 +17,7 @@ INCLUDE_FLAGS+=-I$(PMDK_DIR)/examples/libpmemobj/hashmap/ -I$(PMDK_CPP_DIR) -I$(
 LDFLAGS=-L$(PMDK_DIR)/tx-nondebug -L$(NVM_MALLOC_DIR)
 LDFLAGS+=-L$(PMDK_DIR)/examples/libpmemobj/hashmap/
 LDFLAGS+=-lhashmap_tx -lset_tx -lnvmmalloc -lpmemobj -lpmem -pthread
-MEM_LDFLAGS=-L$(PMDK_DIR)/nondebug -L$(NVM_MALLOC_DIR)
+MEM_LDFLAGS=-L$(PMDK_DIR)/tx-nondebug -L$(NVM_MALLOC_DIR)
 MEM_LDFLAGS+=-L$(PMDK_DIR)/examples/libpmemobj/hashmap/
 MEM_LDFLAGS+=-lhashmap_tx -lset_tx -lnvmmalloc -lpmemobj -lpmem -pthread
 NOFLUSH_LDFLAGS=-L$(PMDK_DIR)/tx-nondebug -L$(NVM_MALLOC_DIR)
